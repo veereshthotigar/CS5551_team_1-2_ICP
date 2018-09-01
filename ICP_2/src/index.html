@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="stylesheet/style.css" rel="stylesheet" id="my-css"></link>
+</head>
+<body>
+<div class="alignCenter"><h2 class="color-blue">Weather Forecast</h2></div>
+<div class="container " ng-app="forecast" ng-controller="forecastController">
+    <div class="col-md-12 row">
+        <div class="col-md-6">
+            <label for="state">Enter State Code</label>
+            <input type="text" class="form-control" name="state" ng-model="bind.state"/>
+            <br/>
+            <label for="city">Enter City Name</label>
+            <input type="text" class="form-control" name="city" ng-model="bind.city"/>
+            <br/>
+            <button class="btn btn-default" id="btn" ng-click="getWeather()"> Get Weather </button>
+            <br/><br/>
+            <p ng-hide="flag" class="btn-danger alignCenter" ng-cloak>{{errorText}}</p>
+        </div>
+        <div class="col-md-6">
+            <div class="row" ng-hide="!flag" ng-cloak>
+                <div class="col-sm-12">
+                    <div id="card" class="weather">
+                        <div class="city-selected">
+                            <article>
+                                <div class="info  col-sm-12">
+                                    <div class="city alignCenter"><span>City:</span> {{bind.city}}</div>
+                                    <div class="time"><span>Time : </span>{{currentRes.FCTTIME.hour_padded}}:{{currentRes.FCTTIME.min}}</div>
+                                    <div class="temp alignCenter">{{currentRes.temp.english}}°F <img class="icon"  ng-src="{{currentRes.icon_url}}"/></div>
+                                    <div class="alignCenter">{{currentRes.wx}}</div>
+                            </article>
+                        </div>
+
+                        <div class="days">
+                            <div class="row row-no-gutter">
+                                <div class="col-md-3" ng-repeat="result in results | limitTo:4">
+                                    <div class="day" >
+                                        <h3><small>at</small> {{result.FCTTIME.hour_padded}}:{{result.FCTTIME.min}}</h3>
+                                        <div>
+                                            {{result.temp.english}}°F <img ng-src="{{result.icon_url}}" alt="icon"/>
+                                        </div>
+                                        <h5>{{result.wx}}</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+<script src="javascipt/app.js" type="application/javascript"></script>
+</body>
+</html>
