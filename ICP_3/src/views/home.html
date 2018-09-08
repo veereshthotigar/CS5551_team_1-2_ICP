@@ -1,0 +1,28 @@
+<form ng-controller="homeCtrl as home">
+    <div class="col-md-6 form-line">
+        <div class="form-group">
+            <input type="text" id="original" placeholder="Enter your search text" class="form-control" ng-model="bind.searchText" ng-change="refresh()" required/>
+            <br>
+            <button type="button" class="btn btn-default button-style" ng-click="getCalories()">Nutrition Breakdown</button>
+            <br><br>
+
+            <div ng-controller="childCtrl as child">
+                <div data-ng-if="bind.searchText">
+                    <button type="button" class="btn btn-default button-style" ng-click="getSpeech()" style="width: 10%;"><img src="/Repository/CS5551_team_1-2_ICP/ICP_3/src/icons/megaphone.svg" alt="play"/> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h4 class="color-yellow" ng-hide="flag" ng-cloak>{{errorText}}</h4>
+        <div class="form-group" ng-hide="!flag" ng-repeat="result in results">
+            <h4 class="color-yellow">The nutrition values for {{result.fields.item_name}} per {{result.fields.nf_serving_size_qty}} {{result.fields.nf_serving_size_unit}} is,</h4>
+            <ul>
+                <li><label>Calories</label> : {{result.fields.nf_calories?result.fields.nf_calories:0}} gm </li>
+                <li><label>Protien</label> : {{result.fields.nf_protein?result.fields.nf_protein:0}} gm </li>
+                <li><label>Carbohydrate</label> : {{result.fields.nf_total_carbohydrate?result.fields.nf_total_carbohydrate:0}} gm </li>
+                <li><label>Fat</label> : {{result.fields.nf_total_fat?result.fields.nf_total_fat:0}} gm </li>
+            </ul>
+        </div>
+    </div>
+</form>

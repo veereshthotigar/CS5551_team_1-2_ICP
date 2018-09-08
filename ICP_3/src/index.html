@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diet Tracker</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="stylesheet/style.css" rel="stylesheet" id="my-css"></link>
+</head>
+<body ng-app="fitnessApp">
+
+    <div class="section-content">
+        <h1 class="section-header"> <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Diet tracker</span></h1>
+        <h3>Search for the food, <b>Get the nutrition breakdown</b></h3>
+    </div>
+    <div class="contact-section">
+        <div class="container">
+            <div ng-view>
+            <!--main content goes here-->
+            </div>
+        </div>
+    </div>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js" type="application/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-route.min.js" type="application/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.2/angular-sanitize.js" type="application/javascript"></script>
+<script src="javascipt/config.js" type="application/javascript"></script>
+<script src="javascipt/app.js" type="application/javascript"></script>
+</body>
+</html>
