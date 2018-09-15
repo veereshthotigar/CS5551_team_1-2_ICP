@@ -1,0 +1,7 @@
+#Fri Sep 14 12:37:27 CDT 2018
+base.0=C\:\\Users\\VThotigar\\Desktop\\TranslateApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ac80bac599bca9c39245ac9a92c458cdffb009de
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\VThotigar\\Desktop\\TranslateApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_b4b86af0478f7bbe532477a288ecde2d1d35bdf7\\classes.dex
+base.1=C\:\\Users\\VThotigar\\Desktop\\TranslateApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_b4b86af0478f7bbe532477a288ecde2d1d35bdf7
+file.0=C\:\\Users\\VThotigar\\Desktop\\TranslateApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ac80bac599bca9c39245ac9a92c458cdffb009de\\classes.dex
