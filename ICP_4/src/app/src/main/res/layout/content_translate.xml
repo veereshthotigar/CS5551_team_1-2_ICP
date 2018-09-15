@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#b1dcf9"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -11,30 +12,41 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="tutorial.cs5551.com.translateapp.TranslateActivity"
     tools:showIn="@layout/activity_translate">
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/home_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        tools:context="com.sample.foo.simplewebapi.MainActivity"
-        android:id="@+id/home_container"
-        android:weightSum="1">
+        android:weightSum="1"
+        tools:context="com.sample.foo.simplewebapi.MainActivity">
 
+
+        <Spinner
+            android:id="@+id/spinnerSrc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.04" />
 
         <EditText
             android:id="@+id/txt_Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.04"
             android:hint="@string/enter_the_text_to_convert"
-            android:layout_weight="0.04" />
+            android:inputType="textEmailAddress" />
 
         <Spinner
-            android:id="@+id/spinnerDropdown"
+            android:id="@+id/spinnerDest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"

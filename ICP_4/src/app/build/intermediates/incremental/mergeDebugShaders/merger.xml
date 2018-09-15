@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\VThotigar\Desktop\TranslateApp\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\VThotigar\Desktop\TranslateApp\app\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\Repository\CS5551_team_1-2_ICP\ICP_4\src\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="E:\Repository\CS5551_team_1-2_ICP\ICP_4\src\app\src\debug\shaders"/></dataSet></merger>

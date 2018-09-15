@@ -1,0 +1,4 @@
+#Fri Sep 14 22:22:24 CDT 2018
+base.0=E\:\\Repository\\CS5551_team_1-2_ICP\\ICP_4\\src\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

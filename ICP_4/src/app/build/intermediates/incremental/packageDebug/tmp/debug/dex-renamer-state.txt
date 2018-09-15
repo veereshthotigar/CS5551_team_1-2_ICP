@@ -1,0 +1,13 @@
+#Fri Sep 14 22:30:38 CDT 2018
+path.3=classes.dex
+path.2=classes.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.3=E\:\\Repository\\CS5551_team_1-2_ICP\\ICP_4\\src\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+base.2=E\:\\Repository\\CS5551_team_1-2_ICP\\ICP_4\\src\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+base.1=E\:\\Repository\\CS5551_team_1-2_ICP\\ICP_4\\src\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+base.0=E\:\\Repository\\CS5551_team_1-2_ICP\\ICP_4\\src\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12

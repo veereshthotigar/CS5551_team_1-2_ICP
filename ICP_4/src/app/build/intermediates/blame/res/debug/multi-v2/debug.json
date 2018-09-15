@@ -246,21 +246,6 @@
             ]
         },
         {
-            "outputFile": "E:\\Repository\\CS5551_team_1-2_ICP\\ICP_4\\src\\app\\build\\intermediates\\res\\merged\\debug\\values-uz-rUZ_values-uz-rUZ.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\VThotigar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.2.1.aar\\0875a619c920cbdc4b40de4802ff21d4\\res\\values-uz-rUZ\\values-uz-rUZ.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,160,268,391,495,612,698,809,925,1005,1084,1168,1277,1384,1485,1593,1698,1803,1902",
-                        "endColumns": "104,107,122,103,116,85,110,115,79,78,83,108,106,100,107,104,104,98,100",
-                        "endOffsets": "155,263,386,490,607,693,804,920,1000,1079,1163,1272,1379,1480,1588,1693,1798,1897,1998"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "E:\\Repository\\CS5551_team_1-2_ICP\\ICP_4\\src\\app\\build\\intermediates\\res\\merged\\debug\\values-si-rLK_values-si-rLK.arsc.flat",
             "map": [
                 {
@@ -271,6 +256,21 @@
                         "startOffsets": "55,165,273,396,503,610,698,803,919,1008,1095,1179,1288,1393,1491,1601,1700,1806,1927,2026",
                         "endColumns": "109,107,122,106,106,87,104,115,88,86,83,108,104,97,109,98,105,120,98,100",
                         "endOffsets": "160,268,391,498,605,693,798,914,1003,1090,1174,1283,1388,1486,1596,1695,1801,1922,2021,2122"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "E:\\Repository\\CS5551_team_1-2_ICP\\ICP_4\\src\\app\\build\\intermediates\\res\\merged\\debug\\values-uz-rUZ_values-uz-rUZ.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\VThotigar\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.2.1.aar\\0875a619c920cbdc4b40de4802ff21d4\\res\\values-uz-rUZ\\values-uz-rUZ.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,160,268,391,495,612,698,809,925,1005,1084,1168,1277,1384,1485,1593,1698,1803,1902",
+                        "endColumns": "104,107,122,103,116,85,110,115,79,78,83,108,106,100,107,104,104,98,100",
+                        "endOffsets": "155,263,386,490,607,693,804,920,1000,1079,1163,1272,1379,1480,1588,1693,1798,1897,1998"
                     }
                 }
             ]
