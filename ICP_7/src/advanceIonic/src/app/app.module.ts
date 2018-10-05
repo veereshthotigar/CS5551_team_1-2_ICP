@@ -20,6 +20,9 @@ import { AngularFireAuthModule } from "angularfire2/auth";
 import { AngularFireDatabaseModule } from "angularfire2/database";
 import { AngularFireModule } from "angularfire2";
 
+//native plugins
+import { Camera } from '@ionic-native/camera';
+
 // Initialize Firebase
 export const firebaseConfig = {
     apiKey: "AIzaSyAzZT0RI1MQf--tTBp_AQ7qwr0wcMuXJG8",
@@ -44,6 +47,7 @@ export const firebaseConfig = {
     BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
+    AngularFireAuthModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -57,6 +61,7 @@ export const firebaseConfig = {
     TabsPage
   ],
   providers: [
+    Camera,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

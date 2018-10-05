@@ -11,31 +11,31 @@
     <div padding>
   <ion-item>
     <ion-label floating>Username</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input type="text" [(ngModel)]="uname" required></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label floating>First name</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input type="text" [(ngModel)]="fname" required></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label floating>Last name</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input type="text" [(ngModel)]="lname" required></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label floating>Password</ion-label>
-    <ion-input type="password"></ion-input>
+    <ion-input type="password" [(ngModel)]="password" required></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label floating>Confirm password</ion-label>
-    <ion-input type="password"></ion-input>
+    <ion-input type="password" [(ngModel)]="cpassword" required></ion-input>
   </ion-item>
 </div>
     <div padding>
-    <button  ion-button  block (click)="goAnOtherPage()">Register</button>
+    <button  ion-button  block (click)="register()">Register</button>
   </div>
   </ion-list>
 </ion-content>
