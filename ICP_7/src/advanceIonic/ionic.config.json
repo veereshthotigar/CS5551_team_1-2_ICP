@@ -1,0 +1,7 @@
+{
+  "name": "advanceIonic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
