@@ -25,12 +25,7 @@ import { Camera } from '@ionic-native/camera';
 
 // Initialize Firebase
 export const firebaseConfig = {
-    apiKey: "AIzaSyAzZT0RI1MQf--tTBp_AQ7qwr0wcMuXJG8",
-    authDomain: "myapp-ceed1.firebaseapp.com",
-    databaseURL: "https://myapp-ceed1.firebaseio.com",
-    projectId: "myapp-ceed1",
-    storageBucket: "myapp-ceed1.appspot.com",
-    messagingSenderId: "822624922951"
+    // insert config here
 };
 
 @NgModule({
