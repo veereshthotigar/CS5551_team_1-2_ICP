@@ -16,19 +16,22 @@ export class TabsPage {
   tab1Root = HomePage;
   tab2Root = AboutPage;
   tab3Root = ContactPage;
-
   constructor(private firebase: AngularFireAuth,public navCtrl: NavController) {
       this.firebase = firebase;
       this.navCtrl = navCtrl;
   }
-
-  signOut(){
-    console.log("sign out called");
+  public navigateToSignIn(){
     this.navCtrl.setRoot(signInPage);
-    // this.firebase.auth().signOut().then(function() {
-    //   console.log("Sign-out successful.");
+    console.log("Sign-out successful.");
+  }
+  public signOut(){
+    console.log("sign out called");
+    this.navigateToSignIn();
+    // this.firebase.auth.signOut().then(function() {
+    //   navigateToSignIn();
+    //
     // }).catch(function(error) {
-    //   console.log("An error happened.");
+    //   console.log("An error happened."+ error.message);
     // });
   }
 }

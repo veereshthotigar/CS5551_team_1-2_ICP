@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AngularFireDatabase} from "angularfire2/database";
 import { AngularFireAuth } from 'angularfire2/auth';
-import { Camera } from '@ionic-native/camera';
+import { Camera,CameraOptions } from '@ionic-native/camera';
 import { Observable } from 'rxjs';
 @Component({
   selector: 'page-home',
@@ -28,7 +28,7 @@ export class HomePage {
 
   clickSnap(){
     console.log("camera is called");
-    this.camera.getPicture({
+    const options : CameraOptions = {
       quality : 15,
       destinationType : this.camera.DestinationType.DATA_URL,
       sourceType : this.camera.PictureSourceType.CAMERA,
@@ -37,7 +37,8 @@ export class HomePage {
       targetWidth: 500,
       targetHeight: 500,
       saveToPhotoAlbum: false
-   }).then((imageData) => {
+    };
+    this.camera.getPicture(options).then((imageData) => {
      // imageData is either a base64 encoded string or a file URI
      // If it's base64 (DATA_URL):
      let base64Image = 'data:image/jpeg;base64,' + imageData;
