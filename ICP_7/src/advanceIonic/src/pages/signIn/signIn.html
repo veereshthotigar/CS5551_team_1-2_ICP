@@ -27,8 +27,7 @@
   <ion-item>
     <div padding>
       <div *ngIf="firebase.user | async as user; else showLogin">
-        <h1 block>Hello {{ user.displayName }}!</h1>
-        <button ion-button color="dark" clear block (click)="logout()">Logout</button>
+        
       </div>
       <ng-template #showLogin>
         <button ion-button color="dark" clear block (click)="login()">Login with &nbsp;<ion-icon name="logo-google"></ion-icon></button>
