@@ -8,22 +8,21 @@ import { Observable } from 'rxjs';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  //https://rxnav.nlm.nih.gov/REST/interaction/interaction.json?rxcui=88014&sources=ONCHigh
-  //https://rxnav.nlm.nih.gov/REST/interaction/interaction.json?rxcui=384455&sources=DrugBank
   dataSources:string[];
   rxcui:string;
   dataSourceSelected:string = 'DrugBank';
   url:string;
   result:Observable<any>;
   constructor(private http: HttpClient) {
-    this.rxcui = "88014";
+    this.rxcui = "384455";
     this.dataSources = ['ONCHigh','DrugBank'];
    }
   selectDataSource(src:string){
     this.dataSourceSelected = src;
   }
   retriveData(){
-    this.url = 'https://rxnav.nlm.nih.gov/REST/interaction/interaction.json?rxcui='+this.rxcui+'&sources='+this.dataSourceSelected;
+    this.url = 'http://127.0.0.1:3000/api/rxlist?rxcui='+this.rxcui+'&sources='+this.dataSourceSelected;
+    this.result = String[''];
     this.http.get(this.url)
       .subscribe(
         (res:any)=>{

@@ -23,7 +23,6 @@
       <input type="text" class="form-control" [(ngModel)]="rxcui" placeholder="RXCUI Number" aria-label="RXCUI Number" aria-describedby="button-addon2">
       <div class="input-group-append">
           <select (change)="selectDataSource($event.target.value)">
-              <option value="DrugBank">DrugBank</option>
               <option *ngFor="let summary of dataSources" value={{summary}}>
                   {{summary}}
               </option>
