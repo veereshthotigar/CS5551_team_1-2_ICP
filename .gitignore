@@ -4,3 +4,7 @@ ICP_7/src/advanceIonic/src/app/app.module.ts
 ICP_7/src/advanceIonic/src/app/app.module.ts
 ICP_7/src/advanceIonic/src/app/app.module.ts
 ICP_8/server/node_modules/*
+ICP_9/server/node_modules/*
+ICP_9/server/config.js
+*.xml
+ICP_9/server/.idea/server.iml
