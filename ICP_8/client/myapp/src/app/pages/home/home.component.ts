@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   url:string;
   result:Observable<any>;
   constructor(private http: HttpClient) {
-    this.rxcui = "384455";
+    this.rxcui = "";
     this.dataSources = ['ONCHigh','DrugBank'];
    }
   selectDataSource(src:string){
