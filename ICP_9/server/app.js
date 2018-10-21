@@ -4,11 +4,13 @@ let createError = require('http-errors'),
     cookieParser = require('cookie-parser'),
     logger = require('morgan');
 const db = require('mongoose'),
+    cors = require('cors'),
     config = require('./config'),
     db_string = 'mongodb://'+config.db_user+':'+config.db_pswd+'@ds235243.mlab.com:35243/thotigarsampath';
 
-//model_setting
+//initializing schema
 require('./models/student_details');
+//connection for DB
 var db_promise = db.connect(db_string,{ useNewUrlParser: true });
 db_promise.then((data) => {
     console.log("Database connection is successfull !");
@@ -26,6 +28,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors());
 
 // Rest APIs
 require('./controllers/')(app, db);

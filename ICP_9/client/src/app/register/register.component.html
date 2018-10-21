@@ -1,0 +1,23 @@
+<form class="p-3" (ngSubmit)="onCreate()" #heroForm="ngForm" autocomplete="off">
+    <div class="form-group">
+      <label for="ID">Class Identity number</label>
+      <input type="number" class="form-control" [(ngModel)]="id" name="id"  placeholder="Enter Class ID">
+    </div>
+    <div class="form-group">
+      <label for="name">Student name</label>
+      <input type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+      <label for="course">Course of study</label>
+      <input type="text" class="form-control" [(ngModel)]="course" name="course" placeholder="Enter Course">
+    </div>
+    <div class="form-group">
+      <label for="major">Major</label>
+      <input type="text" class="form-control" [(ngModel)]="major" name="major" placeholder="Enter Major">
+    </div>
+    <div class="form-group">
+      <label for="minor">Minor</label>
+      <input type="text" class="form-control" [(ngModel)]="minor" name="minor" placeholder="Enter Minor">
+    </div>      
+    <button type="submit" class="btn btn-primary">Create</button>
+  </form>

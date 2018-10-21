@@ -1,24 +1,7 @@
 
 module.exports = function (app, db) {
     let student_details = db.model('student_details');
-    app.get('/student',(req,res)=>{
-        let class_id = req.query.classid;
-        student_details.find({ class_id : class_id }).exec((err, students) => {
-            if (!err) {
-                res.send({
-                    result: "Success",
-                    data: students
-                });
-            } else {
-                res.send({
-                    result: "Failure",
-                    message: "Error in fetching students",
-                    error: err
-                });
-            }
-        });
-    });
-
+    //api to search student details
     app.get('/student/search',(req,res)=>{
         let search_text = req.query.searchtext;
         let search_by = req.query.searchby;
@@ -30,17 +13,16 @@ module.exports = function (app, db) {
                     result: "Success",
                     data: students
                 });
-                console.log(students);
             } else {
-                res.send({
+                res.status(400).send({
                     result: "Failure",
                     message: "Error in fetching students list",
-                    error: err
+                    error: err.message
                 });
             }
         });
     });
-
+    //api to create student details
     app.post('/student/create',(req,res) => {
         let student = req.body;
         let stud_details = new student_details({
@@ -56,13 +38,13 @@ module.exports = function (app, db) {
             if (!err) {
                 res.send({
                     result: "Success",
-                    data: student
+                    message: "Details saved successfully"
                 });
             } else {
-                res.send({
+                res.status(400).send({
                     result: "Failure",
                     message: "Error in creating student",
-                    error: err
+                    error: err.message
                 });
             }
         })

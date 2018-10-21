@@ -1,0 +1,41 @@
+<form class="form-inline p-5" (ngSubmit)="onSearch()" #heroForm="ngForm" autocomplete="off">
+    <label class="sr-only" for="searchtext">Search by</label>
+    <div class="input-group mb-2 mr-sm-2">
+        <select class="form-control"  id="search"
+              required
+              [(ngModel)]="by" name="by">
+        <option *ngFor="let search of searchby" [value]="search">{{search}}</option>
+      </select>
+    </div>
+    
+    <!-- <input type="text" class="form-control mb-2 mr-sm-2" id="searchtext" placeholder="Search by"> -->
+  
+    <label class="sr-only" for="searchtext">searchtext</label>
+    <div class="input-group mb-2 mr-sm-2">
+      <input type="text" [(ngModel)]="text" name="text" class="form-control" id="searchtext" placeholder="Search Text">
+    </div>
+   
+    <button type="submit" class="btn btn-primary mb-2">Search</button>
+  </form>
+  <table class="table table-striped" *ngIf="result">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Course</th>
+          <th scope="col">Major</th>
+          <th scope="col">Minor</th>
+          <th scope="col">Created On</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr *ngFor="let student of result">
+          <th scope="row">{{student.class_id}}</th>
+          <td>{{student.student_name}}</td>
+          <td>{{student.course_of_study}}</td>
+          <td>{{student.major}}</td>
+          <td>{{student.minor}}</td>
+          <td>{{student.created_on | date:'short'}}</td>
+        </tr>
+      </tbody>
+    </table>

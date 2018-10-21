@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
-
+//schema for student details
 const student_details = new Schema({
     class_id: Number,
     student_name: String,
