@@ -8,3 +8,6 @@ ICP_9/server/node_modules/*
 ICP_9/server/config.js
 *.xml
 ICP_9/server/.idea/server.iml
+*.iml
+
+ICP_10/devlopment/node_modules/
